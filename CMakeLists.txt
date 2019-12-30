@@ -76,7 +76,6 @@ generate_messages(
   geometry_msgs
   nav_msgs
   sensor_msgs
-  
 )
 
 ################################################

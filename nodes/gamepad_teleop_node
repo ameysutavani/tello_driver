@@ -34,11 +34,11 @@ class GamepadState:
     def parse_xbox(self, msg):
         # print('Buttons: (%d); Axes (%d)' % (len(msg.buttons), len(msg.axes)))
         # print(msg)
-        if len(msg.buttons) != 16 or len(msg.axes) != 8:
+        if len(msg.buttons) != 11 or len(msg.axes) != 8:
             raise ValueError('Invalid number of buttons (%d) or axes (%d)' % (
                 len(msg.buttons), len(msg.axes)))
-        self.L1 = msg.buttons[6]
-        self.R1 = msg.buttons[7]
+        self.L1 = msg.buttons[4]
+        self.R1 = msg.buttons[5]
         self.LX = msg.axes[0]
         self.LY = msg.axes[1]
         self.RX = msg.axes[2]
