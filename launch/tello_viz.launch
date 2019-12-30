@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- RViz -->
+    <node pkg="rviz" name="rviz" type="rviz" args="-d $(find tello_driver)/launch/tello_node.rviz"/>
+</launch>
